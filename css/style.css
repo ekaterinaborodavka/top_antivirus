@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.cdnfonts.com/css/bebas-neue");
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+@media (min-width: 0px) {
+  .header_info_wrapper {
+    width: 370px;
+    display: flex;
+    align-items: center;
+    height: 49px;
+    margin-left: 15px;
+  }
+
+  .footer_info_wrapper {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    margin: 8px 0px 10px 15px;
+  }
+
+  .cards_container {
+    height: calc(100vh - 119px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header,
+  .footer {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .header_name,
+  .footer_name {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24.61px;
+    color: #ffb800;
+    text-transform: uppercase;
+    padding-right: 10px;
+  }
+
+  .header_store {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24.61px;
+    text-transform: uppercase;
+    border-left: 1px solid #ffffff;
+    padding-left: 12px;
+  }
+
+  .footer_year {
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 27px;
+  }
+
+  .cards_container_header {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 15px 37px 15px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .card_amount {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    width: 240px;
+    height: 100px;
+    margin-bottom: -49px;
+    z-index: 1;
+    background: #ffffff;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+
+  .card_amount_price {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .card_amount_price_wrapper {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .card_amount_per {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .card_amount_best {
+    width: 80px;
+    height: 20px;
+    background: #ffb800;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: -20px;
+    margin-right: -163px;
+    z-index: 2;
+  }
+
+  .card_info {
+    background: #f3f5f6;
+    width: 360px;
+    height: 220px;
+    padding-top: 71px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .card_info_name {
+    line-height: 21.09px;
+  }
+
+  .card_info_licence {
+    font-weight: 700;
+    line-height: 21.09px;
+  }
+
+  .card_info_link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 21px;
+    background: linear-gradient(
+      0deg,
+      #130999 -0.01%,
+      #174d8f 35.01%,
+      #1a7f87 64.91%,
+      #1c9e83 87.44%,
+      #1daa81 99.99%
+    );
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 190px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 31px;
+    text-decoration: none;
+  }
+
+  .card_info_link_text {
+    margin-left: 25px;
+  }
+
+  .card_amount_discount {
+    margin-bottom: -88px;
+    margin-left: -165px;
+    z-index: 2;
+    margin-top: -13px;
+    width: 100px;
+  }
+
+  .card_amount_old {
+    text-decoration-line: line-through;
+    font-size: 16px;
+    line-height: 19px;
+    color: #929292;
+  }
+
+  .card_amount_old {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .card_amount_discount_percent {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: -25px;
+    margin-left: -205px;
+    z-index: 3;
+    transform: rotate(-45deg);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .icon_download {
+    width: 100px;
+    position: fixed;
+    animation: jump 2s infinite;
+    z-index: 150;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .icon_download {
+      width: 100px;
+      bottom: 20%;
+      left: 2%;
+    }
+    @keyframes jump {
+      0% {
+        bottom: 20%;
+      }
+      100% {
+        bottom: 5%;
+      }
+    }
+  }
+
+  @-moz-document url-prefix() {
+    .icon_download {
+      width: 100px;
+      top: 20%;
+      left: 70%;
+    }
+    @keyframes jump {
+      0% {
+        top: 20%;
+      }
+      100% {
+        top: 5%;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .header_info_wrapper,
+  .footer_info_wrapper,
+  .cards {
+    width: 750px;
+  }
+  .cards {
+    padding-bottom: 80px;
+  }
+  .cards_container_header {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 90px 0px 57px 0px;
+  }
+  .header_name,
+  .footer_name {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24.61px;
+    padding-right: 10px;
+  }
+  .header_store {
+    font-size: 21px;
+  }
+  .footer_year {
+    font-size: 14px;
+  }
+  .footer_info_wrapper,
+  .header_info_wrapper {
+    margin-right: 0px;
+  }
+  .cards {
+    justify-content: space-between;
+  }
+  .icon_download {
+    width: 120px;
+  }
+  @-moz-document url-prefix() {
+    .icon_download {
+      left: 80%;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .header_info_wrapper,
+  .footer_info_wrapper,
+  .cards {
+    width: 1144px;
+  }
+  .cards_container_header {
+    margin: 150px 0px 57px 0px;
+  }
+  .icon_download {
+    width: 160px;
+  }
+}
